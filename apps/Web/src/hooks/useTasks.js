@@ -23,7 +23,7 @@ export const useTasks = () => {
         "/tasks",
         {
           headers: {
-            Authorization: token,
+            Authorization: `Bearer ${token}`,
           },
         }
       );
