@@ -54,6 +54,7 @@ exports.getTasks = async (
 
 exports.getTaskById = async (req, res) => {
   try {
+    console.log(req.params.id);
     const task = await Task.findById(req.params.id)
       .populate("assignedTo")
       .populate("project");
