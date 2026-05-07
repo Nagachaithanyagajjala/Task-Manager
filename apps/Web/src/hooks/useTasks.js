@@ -49,7 +49,7 @@ export const useTasks = () => {
         taskData,
         {
           headers: {
-            Authorization: token,
+            Authorization: `Bearer ${token}`,
           },
         }
       );
