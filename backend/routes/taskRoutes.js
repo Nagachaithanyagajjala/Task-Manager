@@ -11,7 +11,7 @@ const {
 
 router.post('/', auth, createTask);
 router.get('/', auth, getTasks);
-router.get('/:id',auth,getTasksById);
+router.get('/:id',auth, getTaskById);
 router.put('/:id', auth, updateTask);
 router.delete('/:id', auth, deleteTask);
 
