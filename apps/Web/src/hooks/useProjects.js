@@ -48,7 +48,7 @@ export const useProjects = () => {
         projectData,
         {
           headers: {
-            Authorization: token,
+            Authorization:`Bearer ${token}`,
           },
         }
       );
