@@ -4,7 +4,7 @@ const auth = require('../middleware/authMiddleware');
 const {
   createTask,
   getTasks,
-  getTasksById,
+  getTaskById,
   updateTask,
   deleteTask,
 } = require('../controllers/taskController');
