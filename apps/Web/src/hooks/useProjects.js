@@ -22,7 +22,7 @@ export const useProjects = () => {
         "/projects",
         {
           headers: {
-            Authorization: token,
+            Authorization: `Bearer ${token}`,
           },
         }
       );
