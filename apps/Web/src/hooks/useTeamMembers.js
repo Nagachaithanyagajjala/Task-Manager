@@ -21,7 +21,7 @@ export const useTeamMembers = () => {
         "/users",
         {
           headers: {
-            Authorization: token,
+            Authorization: `Bearer ${token}`,
           },
         }
       );
