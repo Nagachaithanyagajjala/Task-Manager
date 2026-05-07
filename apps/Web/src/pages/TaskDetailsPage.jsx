@@ -19,7 +19,7 @@ const TaskDetailsPage = () => {
   const { tasks, loading, updateTask, deleteTask } = useTasks();
   const [deleting, setDeleting] = useState(false);
 
-  const task = tasks.find(t => t.id === id);
+  const task = tasks.find(t => t._id === id);
 
   const handleStatusChange = async (newStatus) => {
     try {
