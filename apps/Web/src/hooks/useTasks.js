@@ -23,7 +23,7 @@ export const useTasks = () => {
         "/tasks",
         {
           headers: {
-            Authorization: `Bearer ${token}`,
+            Authorization: token,
           },
         }
       );
@@ -49,7 +49,7 @@ export const useTasks = () => {
         taskData,
         {
           headers: {
-            Authorization: `Bearer ${token}`,
+            Authorization: token,
           },
         }
       );
@@ -73,7 +73,7 @@ export const useTasks = () => {
       updatedData,
       {
         headers: {
-          Authorization: `Bearer ${token}`,
+          Authorization: token,
         },
       }
     );
@@ -95,7 +95,7 @@ const deleteTask = async (id) => {
       `/tasks/${id}`,
       {
         headers: {
-          Authorization: `Bearer ${token}`,
+          Authorization: token,
         },
       }
     );
